@@ -1,0 +1,282 @@
+html {
+/*  background: url(header_2.jpg) no-repeat center center fixed;
+*/  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: rgb(0,255,0);
+	cursor: pointer;
+}
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font: "Open Sans";
+  text-align: left;
+}
+ul, li{
+  text-align: left
+}
+h1, h2, h3{
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+/* Index Page */
+/* Landing Section */
+.index-header{
+	height: 50%;
+}
+
+.title-wrap{
+	text-align: center;
+	height: 100%;
+} 
+#title{
+	font: bold 56px "Montserrat";
+	padding-top: 25%;
+}
+
+.button-container{
+	margin-top: 25px;
+	width: 70%;
+	margin-left: 20%;
+	margin-right: 15%;
+}
+
+.button-col-left, .button-col-right{
+	float: left;
+	width: 40%;
+	border-style: outset;
+	border-color: green;
+}
+
+.button-col-left{
+	margin-right: 5%;
+}
+
+#work-button-title, #play-button-title{
+	margin: 8px;
+	font: bold 24px "Montserrat";
+}
+
+/* Section Formatting */
+.full-width-section{
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+.full-width-section-white{
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	color: black;
+}
+.full-width-section-white h1{
+	color: black;
+	margin-bottom: 10px;
+}
+
+.section-wrap{
+	width: 80%;
+	color: black;
+	padding-top: 40px;
+	margin-left: 10%;
+	padding-bottom: 20px;
+
+}
+.t-wrap{
+	background-color: black;
+}
+
+.section-wrap h1{
+	font: bold 42px "Montserrat";
+	color: white;
+}
+.section-wrap h2{
+	font: bold 32px "Montserrat";
+	margin-left: 10px;
+	text-align: left;
+}
+
+.section-wrap h3{
+	font: bold 24px "Montserrat";
+	margin-left: 10px;
+	text-align: left;
+}
+
+
+.section-wrap p{
+	font: 16px "Montserrat";
+	text-align: left;
+	width: 80%;
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+.section-wrap .job-title{
+	font: 18px "Montserrat";
+	text-align: left;
+	font-style: italic;
+	margin-top: 0px;
+}
+
+.highlight{
+	background-color: yellow;
+}
+/* Travel Section */
+.section-wrap .travel-image{
+	float: left;
+	width: 50%;
+}
+.travel-col-left{
+	float:left;
+	width: 50%;
+}
+
+/* About section */
+.bio-col-left{
+	float: left;
+	width: 69%;
+}
+
+
+.about-col-right{
+	float: left;
+	width: 70%;
+}
+
+.section-wrap .oregon-image{
+	float: left;
+	width: 30%;
+	text-align: left;
+}
+
+/* Image Tiles */
+.tile-wrap{
+	width: 80%;
+	margin-left: 20%;
+	margin-right: 10%;
+}
+
+.tile-wrap img{
+	width: 150px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+
+
+/* Header */
+.header{
+  width: 100%;
+  height: 30px;
+  line-height: 25px;
+  top:0;
+}
+
+.header .pages{
+  float: right;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font: 16px "Montserrat";
+
+}
+#contact{
+	border-style: dotted;
+	margin-right: 20px;
+}
+
+
+/* Lateral scroll */
+.titleBlock {
+	position: absolute;
+	top: 600px;
+	right:-700px;
+	width:60%;
+	height:80px;
+	font-size:30px;
+	color: black;
+}
+
+
+.theBlock {
+	position: absolute;
+	top: 750px;
+	right:-700px;
+	width:60%;
+	height:300px;
+	color: black;
+	border-style: dotted;
+	border-width: 5px;
+	background: white;
+}
+
+.whereBlock {
+	position: absolute;
+	top: 1130px;
+	right:-700px;
+	width:60%;
+	height:220px;
+	font-size:30px;
+	color: black;
+	border-style: dotted;
+	border-width: 5px;
+}
+
+.playBlock {
+	position: absolute;
+	top: 1430px;
+	right:-700px;
+	width:60%;
+	font-size:30px;
+	color: black;
+	border-style: dotted;
+	border-width: 5px;
+	margin-bottom: 10px;
+}
+
+
+
+.movieBlock {
+	position: absolute;
+	top: 1400px;
+	right:-700px;
+	width:40%;
+	font-size:30px;
+	color: black;
+}
+
+.breaker{
+	margin-top: 550px;
+}
+
+.workTitle, .research-title {
+	position: absolute;
+	top: 2100px;
+	right:-700px;
+	width: 45%;
+	height:80px;
+	font-size:30px;
+	color: black;
+}
+
+.experience, .research{
+	position: absolute;
+	top: 2200px;
+	right:-700px;
+	width: 49%;
+	font-size:30px;
+	color: black;
+}
+
+
