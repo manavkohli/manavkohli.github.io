@@ -109,11 +109,22 @@ h1, h2, h3{
 	margin-left: 10%;
 	padding-bottom: 20px;
 	padding-top: 25px;
-
+	height: 100%;
 }
+
+.section-wrap .cols{
+	float: top;
+	height: 70%;
+	margin-top: 15px;
+}
+.section-wrap .bottom{
+	float: top;
+}
+
 .t-wrap{
 	background-color: black;
 }
+
 
 .section-wrap h1{
 	font: bold 42px "Montserrat";
@@ -133,7 +144,7 @@ h1, h2, h3{
 
 
 .section-wrap p{
-	font: 16px "Montserrat";
+	font: 14px "Montserrat";
 	text-align: left;
 	width: 80%;
 	margin-left: 25px;
@@ -168,12 +179,8 @@ h1, h2, h3{
 
 .about-col-left, .about-col-right{
 	float: left;
-	width: 40%;
+	width: 50%;
 }
-.about-col-left{
-	margin-right: 10%
-}
-
 
 .section-wrap .oregon-image{
 	float: left;
