@@ -75,8 +75,23 @@ h1, h2, h3{
 	height: 100%;
 	text-align: center;
 	color: black;
-	margin-bottom: 48px;
 }
+
+#about{
+	opacity: 25%;
+	background-color: #00FFCC;
+}
+
+#projects{
+	opacity: 25%;
+	background-color: white;
+}
+
+#jobs{
+	opacity: 25%;
+	background-color: orange;
+}
+
 .full-width-section-white{
 	width: 100%;
 	text-align: center;
@@ -91,9 +106,9 @@ h1, h2, h3{
 .section-wrap{
 	width: 80%;
 	color: black;
-	padding-top: 40px;
 	margin-left: 10%;
 	padding-bottom: 20px;
+	padding-top: 25px;
 
 }
 .t-wrap{
