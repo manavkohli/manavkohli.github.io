@@ -26,8 +26,9 @@ ul, li{
   text-align: left
 }
 h1, h2, h3{
-  margin-top: 0px;
+  margin-top: 15px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 /* Index Page */
@@ -71,8 +72,10 @@ h1, h2, h3{
 /* Section Formatting */
 .full-width-section{
 	width: 100%;
+	height: 100%;
 	text-align: center;
 	color: black;
+	margin-bottom: 48px;
 }
 .full-width-section-white{
 	width: 100%;
@@ -148,11 +151,14 @@ h1, h2, h3{
 	width: 69%;
 }
 
-
-.about-col-right{
+.about-col-left, .about-col-right{
 	float: left;
-	width: 70%;
+	width: 40%;
 }
+.about-col-left{
+	margin-right: 10%
+}
+
 
 .section-wrap .oregon-image{
 	float: left;
@@ -196,65 +202,6 @@ h1, h2, h3{
 	margin-right: 20px;
 }
 
-
-/* Lateral scroll */
-.titleBlock {
-	position: absolute;
-	top: 600px;
-	right:-700px;
-	width:60%;
-	height:80px;
-	font-size:30px;
-	color: black;
-}
-
-
-.theBlock {
-	position: absolute;
-	top: 750px;
-	right:-700px;
-	width:60%;
-	height:300px;
-	color: black;
-	border-style: dotted;
-	border-width: 5px;
-	background: white;
-}
-
-.whereBlock {
-	position: absolute;
-	top: 1130px;
-	right:-700px;
-	width:60%;
-	height:220px;
-	font-size:30px;
-	color: black;
-	border-style: dotted;
-	border-width: 5px;
-}
-
-.playBlock {
-	position: absolute;
-	top: 1430px;
-	right:-700px;
-	width:60%;
-	font-size:30px;
-	color: black;
-	border-style: dotted;
-	border-width: 5px;
-	margin-bottom: 10px;
-}
-
-
-
-.movieBlock {
-	position: absolute;
-	top: 1400px;
-	right:-700px;
-	width:40%;
-	font-size:30px;
-	color: black;
-}
 
 .breaker{
 	margin-top: 550px;
