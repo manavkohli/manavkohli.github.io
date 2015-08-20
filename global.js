@@ -24,7 +24,13 @@ $(document).ready(function (){
 
             $("#about-arrow").click(function (){
                 $('html, body').animate({
-                        scrollTop: $("#projects").offset().top
+                        scrollTop: $("#jameez").offset().top
+                    }, 750);
+            });
+
+            $("#jameez-arrow").click(function (){
+                $('html, body').animate({
+                        scrollTop: $("#site").offset().top
                     }, 750);
             });
 
