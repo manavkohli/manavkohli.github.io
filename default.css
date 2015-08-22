@@ -16,6 +16,9 @@ a:hover{
 	cursor: pointer;
 }
 
+p a{
+	color: red;
+}
 body {
   width: 100%;
   height: 100%;
