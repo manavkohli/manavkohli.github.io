@@ -24,9 +24,18 @@
 .landing-screen {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  color: green;
+  justify-content: flex-start;
+  color: white;
   background: black;
+  font-size: calc(12px + 3vmin);
+  text-align: left;
+}
+
+.flex-half-column {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
 }
