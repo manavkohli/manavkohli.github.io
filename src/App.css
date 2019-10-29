@@ -56,3 +56,9 @@
   padding-right: 2vw;
   font-size: calc(12px + 1vmin);;
 }
+
+.full-screen-page {
+  min-height: 90vh;
+  background: black;
+  color: white;
+}

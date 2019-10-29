@@ -29,7 +29,8 @@ export default class Menu extends Component {
             <MenuItem onClick={this.onMenuItemClick} label="quantum computing" />/
             <MenuItem onClick={this.onMenuItemClick} label="ML" />/
             <MenuItem onClick={this.onMenuItemClick} label="blogging" />/
-            <MenuItem onClick={this.onMenuItemClick} label="art" />
+            <MenuItem onClick={this.onMenuItemClick} label="art" />/
+            <MenuItem onClick={this.onMenuItemClick} label="home" />
           </span>
         )
       }<span onClick={this.updateShowMenu}><Emoji symbol="🍔" label="hamburger" /></span>
