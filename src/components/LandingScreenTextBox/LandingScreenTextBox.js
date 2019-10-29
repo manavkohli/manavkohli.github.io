@@ -6,7 +6,6 @@ class LandingScreenTextBox extends Component {
 
   render() {
     const emojis = [
-      <Emoji symbol="👨‍💻" label="code"/>,
       <Emoji symbol="🍳" label="cook"/>,
       <Emoji symbol="🎾" label="tennis"/>,
       <Emoji symbol="🏂" label="snowboard"/>,
@@ -14,6 +13,7 @@ class LandingScreenTextBox extends Component {
       <Emoji symbol="🏝" label="vacation"/>,
       <Emoji symbol="🏃🏽‍" label="run"/>,
       <Emoji symbol="🎸" label="guitar"/>,
+      <Emoji symbol="👨🏽‍💻" label="code"/>,
       <Emoji symbol="🎉" label="party"/>,
     ]
 

@@ -22,7 +22,7 @@
 }
 
 .landing-screen {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,9 +33,26 @@
   text-align: left;
 }
 
-.flex-half-column {
-  width: 50%;
+.flex-two-thirds-column {
+  width: 67vh;
   display: flex;
   justify-content: flex-start;
-  padding-left: 5%;
+  padding-left: 5vw;
+}
+
+.app-header {
+  min-height: 10vh;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 5vw;
+  padding-top: 2vw;
+  color: white;
+  font-size: calc(12px + 3vmin);
+}
+
+.menu-items {
+  padding-right: 2vw;
+  font-size: calc(12px + 1vmin);;
 }
