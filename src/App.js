@@ -4,6 +4,7 @@ import LandingScreenTextBox from './components/LandingScreenTextBox/LandingScree
 import Menu from './components/Menu/Menu'
 import running_snow from "./img/gifs/running_snow.gif"
 import fantastic_mr_fox from "./img/gifs/fantastic_mr_fox.gif"
+import royal_tenenbaums from "./img/gifs/royal_tenenbaums.gif"
 import headshot from './img/headshot_circle.png'
 import HorizontalCard from './components/HorizontalCard/HorizontalCard'
 
@@ -27,6 +28,10 @@ class App extends Component {
     this.setState({currentPage: "thanx"})
   }
 
+  navigateToStillThere = () => {
+    this.setState({currentPage: "still there"})
+  }
+
   renderPage = () => {
     const introContent = (
       <div>
@@ -38,6 +43,7 @@ class App extends Component {
       case "home":
         return (
           <div>
+
             <div className="landing-screen">
               <div className="flex-two-thirds-column blue">
                 <LandingScreenTextBox />
@@ -48,13 +54,23 @@ class App extends Component {
             </div>
           </div>
         )
+      case "still there":
+        return (
+          <div>
+            <div className="full-width">
+              <img alt="" src={royal_tenenbaums} style={{cursor: "pointer"}} onClick={this.navigateToThanx} className="navigation-gif"/>
+            </div>
+            <p>Sorry we can keep going</p>
+          </div>
+
+        )
       case "me":
         return (
           <div className="full-screen-page">
             <HorizontalCard image={headshot} text={introContent} />
             <div className="right-corner">
               <div className="flex-image-column-right-align">
-                <img alt="" src={fantastic_mr_fox} style={{cursor: "pointer"}} onClick={this.navigateToThanx} className="navigation-gif"/>
+                <img alt="" src={fantastic_mr_fox} style={{cursor: "pointer"}} onClick={this.navigateToStillThere} className="navigation-gif"/>
               </div>
             </div>
           </div>
