@@ -36,26 +36,36 @@
 }
 
 .flex-two-thirds-column {
-  width: 67vh;
-  display: flex;
+  width: 63%;
   justify-content: flex-start;
   padding-left: 5vw;
+  padding-right: 5vw;
 }
 
-.one-third-right-column {
+.flex-one-third-column {
+  width: 33%;
+  justify-content: flex-start;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.left-aligned-text {
+  text-align: left;
+}
+
+.flex-image-column-right-align {
   display: flex;
   flex-direction: row;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  background: red;
   align-items: flex-end;
   min-width: 100vw;
   margin-right: 5vw;
-  min-height: 100vh;
   background: black;
-  min-height: 30vh;
   min-width: 10vw;
+  margin-top: 20vh;
 }
+
 .app-header {
   min-height: 10vh;
   background: black;
@@ -78,8 +88,33 @@
   min-height: 80vh;
   background: black;
   color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .landing-screen-text-box {
+  background: blue;
+  padding: 2vh;
+  max-width: 50vw;
+}
+
+.horizontal-card-image {
+  width: 100%;
+}
+
+.horizontal-card {
+  width: 100vw;
+  display: flex;
+}
+
+.right-corner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100vw;
+}
+
+.navigation-gif {
   max-height: 20vh;
 }
