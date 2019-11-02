@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Emoji from '../Emoji/Emoji'
 import MenuItem from './MenuItem'
+import CloseIcon from '../../img/icons/close_icon.png'
 export default class Menu extends Component {
   constructor(props) {
     super(props);
@@ -15,6 +15,7 @@ export default class Menu extends Component {
 
   onMenuItemClick = (label) => {
     this.props.onClick(label)
+    this.setState({showMenu: false});
   }
 
   render() {
@@ -24,6 +25,7 @@ export default class Menu extends Component {
         this.state.showMenu &&
         (
           <span className="menu-items">
+            <MenuItem onClick={this.onMenuItemClick} label="me" />/
             <MenuItem onClick={this.onMenuItemClick} label="thanx" />/
             <MenuItem onClick={this.onMenuItemClick} label="intuit" />/
             <MenuItem onClick={this.onMenuItemClick} label="quantum computing" />/
@@ -33,7 +35,7 @@ export default class Menu extends Component {
             <MenuItem onClick={this.onMenuItemClick} label="home" />
           </span>
         )
-      }<span onClick={this.updateShowMenu}><Emoji symbol="🍔" label="hamburger" /></span>
+      }<span onClick={this.updateShowMenu}><img src={CloseIcon} alt="" style={{cursor: "pointer"}} height="42" width="42"/></span>
       </div>
     )
   }

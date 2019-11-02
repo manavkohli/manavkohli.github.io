@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: black;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -22,7 +24,7 @@
 }
 
 .landing-screen {
-  min-height: 90vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,6 +42,20 @@
   padding-left: 5vw;
 }
 
+.one-third-right-column {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  background: red;
+  align-items: flex-end;
+  min-width: 100vw;
+  margin-right: 5vw;
+  min-height: 100vh;
+  background: black;
+  min-height: 30vh;
+  min-width: 10vw;
+}
 .app-header {
   min-height: 10vh;
   background: black;
@@ -54,11 +70,16 @@
 
 .menu-items {
   padding-right: 2vw;
-  font-size: calc(12px + 1vmin);;
+  font-size: calc(12px + 1vmin);
+  cursor: pointer;
 }
 
 .full-screen-page {
-  min-height: 90vh;
+  min-height: 80vh;
   background: black;
   color: white;
+}
+
+.landing-screen-text-box {
+  max-height: 20vh;
 }
