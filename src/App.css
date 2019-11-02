@@ -102,11 +102,13 @@
 
 .horizontal-card-image {
   width: 100%;
+  max-width: 30vh;
 }
 
 .horizontal-card {
   width: 100vw;
   display: flex;
+  padding: 3vh;
 }
 
 .right-corner {
@@ -118,6 +120,7 @@
 
 .navigation-gif {
   max-height: 20vh;
+  padding-bottom: 5vh;
 }
 
 .full-width {
@@ -133,4 +136,8 @@
   min-height: 10vh;
   display: inline-block;
   padding-left: 2vw;
+}
+
+.left-aligned {
+  padding-right: 10vw;
 }

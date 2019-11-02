@@ -16,7 +16,7 @@ export default class Menu extends Component {
 
   onMenuItemClick = (label) => {
     this.props.onClick(label)
-    this.setState({showMenu: false});
+    this.setState({showMenu: false, rotation: 45});
   }
 
   render() {
@@ -32,7 +32,8 @@ export default class Menu extends Component {
             <MenuItem onClick={this.onMenuItemClick} label="thanx" />/
             <MenuItem onClick={this.onMenuItemClick} label="intuit" />/
             <MenuItem onClick={this.onMenuItemClick} label="projects" />/
-            <MenuItem onClick={this.onMenuItemClick} label="art" />
+            <MenuItem onClick={this.onMenuItemClick} label="art" />/
+            <MenuItem onClick={this.onMenuItemClick} label="contact" />
           </span>
         )
       }<span onClick={this.updateShowMenu}>
