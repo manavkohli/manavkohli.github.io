@@ -50,6 +50,11 @@
   padding-right: 5vw;
 }
 
+.left-border {
+  border-left: 6px solid white;
+  margin-left: 2vw;
+}
+
 .left-aligned-text {
   text-align: left;
 }

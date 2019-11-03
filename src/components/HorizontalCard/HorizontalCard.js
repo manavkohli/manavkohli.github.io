@@ -3,7 +3,7 @@ import React from 'react'
 const HorizontalCard = props => (
     <div> {
       props.imageAlignment === "left" && <div className="horizontal-card">
-        <div className="flex-one-third-column">
+        <div className="flex-one-third-column left-border">
           <img alt="" src={props.image} className="horizontal-card-image"/>
         </div>
         <div className="flex-two-thirds-column left-aligned-text">
@@ -13,7 +13,7 @@ const HorizontalCard = props => (
     }
     {
       props.imageAlignment === "right" && <div className="horizontal-card">
-        <div className="flex-two-thirds-column left-aligned-text">
+        <div className="flex-two-thirds-column left-aligned-text left-border">
           {props.text}
         </div>
         <div className="flex-one-third-column left-aligned">

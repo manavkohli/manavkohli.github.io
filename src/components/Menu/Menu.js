@@ -33,6 +33,7 @@ export default class Menu extends Component {
             <MenuItem onClick={this.onMenuItemClick} label="intuit" />/
             <MenuItem onClick={this.onMenuItemClick} label="projects" />/
             <MenuItem onClick={this.onMenuItemClick} label="art" />/
+            <MenuItem onClick={this.onMenuItemClick} label="this" />/
             <MenuItem onClick={this.onMenuItemClick} label="contact" />
           </span>
         )
