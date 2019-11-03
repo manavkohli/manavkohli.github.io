@@ -141,3 +141,11 @@
 .left-aligned {
   padding-right: 10vw;
 }
+
+.animated-horizontal-card {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
