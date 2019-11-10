@@ -5,7 +5,7 @@ const ScrollingPage = (props) => (
   <Fragment>
     {props.items.map((item, key) => (
       <div className="animated-horizontal-card" key={key}>
-        <Fade top>
+        <Fade bottom>
           {item}
         </Fade>
       </div>
