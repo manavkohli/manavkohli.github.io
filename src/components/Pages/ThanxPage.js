@@ -11,20 +11,41 @@ export default class ThanxPage extends Component {
     return x > 7 ? x - 3 : x
   }
 
+  getChurnNonAnomalousNumber = () => {
+    let x = Math.random() * 10
+    if (x > 3 && x < 5) {
+      x -= 2.5
+    }
+    return x
+  }
+
   render() {
-    const data = []
+    const anomalyDetectionData = []
+    const churnDetectionData = []
     for(let i = 0; i < 60; i++) {
-      data.push({
+      anomalyDetectionData.push({
         x: this.getNonAnomalousNumber(),
         y: this.getNonAnomalousNumber()
       })
+
+      churnDetectionData.push({
+        x: this.getChurnNonAnomalousNumber(),
+        y: this.getChurnNonAnomalousNumber()
+      })
     }
 
-    const anomalousData = [
+    const anomalyDetectionAnomalousData = [
       {x: 9, y: 9},
       {x: 9.3, y: 9.1},
       {x: 9.9, y: 9},
       {x: 9, y: 9.8}
+    ]
+
+    const churnAnomalousData = [
+      {x: 4, y: 4},
+      {x: 4.3, y: 4.1},
+      {x: 4.4, y: 4},
+      {x: 3.7, y: 4.8}
     ]
 
     const architectureContent = (
@@ -40,14 +61,25 @@ export default class ThanxPage extends Component {
       <div>
         <HorizontalCard text={anomalyDetectionContent} imageAlignment="right"/>
         <div className="scatter-plot-section">
-          <ScatterPlot data={data} anomalousData={anomalousData}/>
+          <ScatterPlot
+            data={anomalyDetectionData}
+            anomalousData={anomalyDetectionAnomalousData}
+          />
+        </div>
+      </div>
+    )
+    const churnSection = (
+      <div>
+        <HorizontalCard text={churnContent} imageAlignment="right"/>
+        <div className="scatter-plot-section">
+          <ScatterPlot data={churnDetectionData} anomalousData={churnAnomalousData}/>
         </div>
       </div>
     )
 
     const items = [
       anomalyDetectionSection,
-      <HorizontalCard image={headshot} text={churnContent} imageAlignment="right"/>,
+      churnSection,
       <HorizontalCard image={headshot} text={architectureContent} imageAlignment="right"/>,
       <img alt="" src={stick_roll_over} style={{cursor: "pointer"}} onClick={this.props.onClick} className="navigation-gif"/>
     ]
