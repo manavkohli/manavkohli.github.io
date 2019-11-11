@@ -14,11 +14,11 @@ export default class LargeListItem extends Component {
   }
 
   highlightText = () => {
-    this.setState({color: "#4fa35c"})
+    this.setState({color: "#E1B07E"})
   }
 
   unhighlightText = () => {
-    this.setState({color: "white"})
+    this.setState({color: "#EEEEEE"})
   }
 
   render() {

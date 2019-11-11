@@ -6,7 +6,7 @@ const LandingPage = (props) => (
   (
     <div>
       <div className="landing-screen">
-        <div className="flex-two-thirds-column blue">
+        <div className="flex-two-thirds-column">
           <LandingScreenTextBox />
         </div>
       </div>
