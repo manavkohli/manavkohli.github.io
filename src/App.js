@@ -56,10 +56,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="app-header">
-          <Menu onClick={this.updateCurrentPage} currentPage={this.state.currentPage}/>
-        </div>
-        {this.renderPage()}
+        {
+          this.state.currentPage !== "home" && <div className="app-header">
+            <Menu onClick={this.updateCurrentPage} currentPage={this.state.currentPage}/>
+          </div>
+        }
+        {
+          this.renderPage()
+        }
       </div>
     )
   }

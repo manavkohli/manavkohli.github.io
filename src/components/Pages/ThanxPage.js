@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
 import HorizontalCard from '../HorizontalCard/HorizontalCard'
-import headshot from '../../img/headshot_circle.png'
-import stick_roll_over from '../../img/gifs/stick_roll_over.gif'
 import ScrollingPage from './ScrollingPage'
 import ScatterPlot from '../Graph/ScatterPlot'
+import GradientPie from '../Graph/GradientPie'
 
 export default class ThanxPage extends Component {
   getNonAnomalousNumber = () => {
@@ -76,12 +75,19 @@ export default class ThanxPage extends Component {
         </div>
       </div>
     )
+    const architectureSection = (
+      <div>
+        <HorizontalCard text={architectureContent} imageAlignment="right"/>
+        <div className="scatter-plot-section">
+          <GradientPie />
+        </div>
+      </div>
+    )
 
     const items = [
       anomalyDetectionSection,
       churnSection,
-      <HorizontalCard image={headshot} text={architectureContent} imageAlignment="right"/>,
-      <img alt="" src={stick_roll_over} style={{cursor: "pointer"}} onClick={this.props.onClick} className="navigation-gif"/>
+      architectureSection
     ]
 
     return <ScrollingPage items={items} />

@@ -21,16 +21,6 @@ export default class ScatterPlot extends React.Component {
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
-  _forgetValue = () => {
-    this.setState({
-      value: null
-    });
-  };
-
-  _rememberValue = value => {
-    this.setState({x: "test", y: "test"});
-  };
-
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
@@ -54,8 +44,8 @@ export default class ScatterPlot extends React.Component {
         <HorizontalGridLines />
         <XAxis />
         <YAxis />
-        <MarkSeries data={this.props.data} />
-        <MarkSeries color="red" data={this.props.anomalousData} />
+        <MarkSeries color="#4F97A3" data={this.props.data} />
+        <MarkSeries color="#554fa3" data={this.props.anomalousData} />
         {value ? <Hint value={value} /> : null}
       </XYPlot>
     );
