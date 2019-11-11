@@ -37,7 +37,7 @@ class App extends Component {
   renderPage = () => {
     switch(this.state.currentPage) {
       case "home":
-        return <LandingPage onClick={this.navigateToAboutMe} />
+        return <LandingPage onClick={this.updateCurrentPage} />
       case "still there":
         return <StillTherePage onClick={this.navigateToThanx} />
       case "thanx":

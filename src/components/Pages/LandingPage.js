@@ -1,6 +1,7 @@
 import React from 'react'
-import running_snow from '../../img/gifs/running_snow.gif'
 import LandingScreenTextBox from '../LandingScreenTextBox/LandingScreenTextBox'
+import LargeList from '../LargeList/LargeList'
+
 const LandingPage = (props) => (
   (
     <div>
@@ -9,9 +10,19 @@ const LandingPage = (props) => (
           <LandingScreenTextBox />
         </div>
       </div>
-      <div className="flex-image-column-right-align">
-        <img alt="" src={running_snow} style={{cursor: "pointer"}} onClick={props.onClick} />
-      </div>
+      <LargeList
+        onClick={props.onClick}
+        items={
+          [
+            {'label': 'me', 'year': 'Nov 1993-now'},
+            {'label': 'thanx', 'year': 'Dec 2018-now'},
+            {'label': 'intuit', 'year': 'Sep 2016-Dec 2018'},
+            {'label': 'writing', 'year': 'Jan 2019-now'},
+            {'label': 'projects', 'year': '~'},
+            {'label': 'art', 'year': '~'},
+          ]
+        }
+      />
     </div>
   )
 )
