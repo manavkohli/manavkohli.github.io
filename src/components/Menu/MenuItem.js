@@ -13,7 +13,7 @@ export default class MenuItem extends Component {
   }
 
   highlightText = () => {
-    this.setState({color: "#39ff14"})
+    this.setState({color: "#E1B07E"})
   }
 
   unhighlightText = () => {
