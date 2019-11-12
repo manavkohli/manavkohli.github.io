@@ -3,6 +3,7 @@ import './App.css';
 import Menu from './components/Menu/Menu'
 import LandingPage from './components/Pages/LandingPage'
 import ThanxPage from './components/Pages/ThanxPage'
+import IntuitPage from './components/Pages/IntuitPage'
 import AboutMePage from './components/Pages/AboutMePage'
 import StillTherePage from './components/Pages/StillTherePage'
 
@@ -44,6 +45,12 @@ class App extends Component {
       return (
         <div className="full-screen-page">
           <ThanxPage onClick={this.navigateToIntuit} />
+        </div>
+      )
+      case "intuit":
+      return (
+        <div className="full-screen-page">
+          <IntuitPage />
         </div>
       )
       case "me":

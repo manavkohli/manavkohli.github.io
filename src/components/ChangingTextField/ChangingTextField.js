@@ -11,7 +11,7 @@ class ChangingTextField extends Component {
   componentDidMount() {
     this.interval = setInterval(
       () => this.setState({ valueIdx: this.state.valueIdx + 1}),
-      800
+      this.props.offset
     );
   }
 
@@ -21,7 +21,7 @@ class ChangingTextField extends Component {
 
   render() {
     return (
-      <span className="changing-text-field">
+      <span className="changing-text-field" style={{color: this.props.color}}>
         {this.props.textValues[this.state.valueIdx % this.props.textValues.length]}
       </span>
     )
