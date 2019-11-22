@@ -7,12 +7,12 @@ import GradientPie from '../Graph/GradientPie'
 export default class ThanxPage extends Component {
   getNonAnomalousNumber = () => {
     const x = Math.random() * 10
-    return x > 7 ? x - 3 : x
+    return x > 8.9 ? x - Math.random() * 10 : x
   }
 
   getChurnNonAnomalousNumber = () => {
     let x = Math.random() * 10
-    if (x > 3 && x < 5) {
+    if (x > 3.5 && x < 4.5) {
       x -= 2.5
     }
     return x
@@ -21,7 +21,7 @@ export default class ThanxPage extends Component {
   render() {
     const anomalyDetectionData = []
     const churnDetectionData = []
-    for(let i = 0; i < 60; i++) {
+    for(let i = 0; i < 200; i++) {
       anomalyDetectionData.push({
         x: this.getNonAnomalousNumber(),
         y: this.getNonAnomalousNumber()

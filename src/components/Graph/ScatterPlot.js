@@ -40,8 +40,8 @@ export default class ScatterPlot extends React.Component {
     const plotHeight = 0.4 * this.state.height
     return (
       <XYPlot width={plotWidth} height={plotHeight} className="scatter-plot">
-        <VerticalGridLines />
-        <HorizontalGridLines />
+        <VerticalGridLines style={{stroke: 'black'}} />
+        <HorizontalGridLines style={{stroke: 'black'}} />
         <XAxis />
         <YAxis />
         <MarkSeries color="#4F97A3" data={this.props.data} />

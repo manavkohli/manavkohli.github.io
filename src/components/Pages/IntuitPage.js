@@ -60,7 +60,7 @@ export default class IntuitPage extends Component {
       <div>
         <HorizontalCard text={languageModelContent} imageAlignment="right"/>
         <div className="big-text">
-        The brown fox jumps over the
+        The quick brown fox jumps over the
           <ChangingTextField textValues={adjectives} offset={6000} color="#E1B07E"/>
           <ChangingTextField textValues={animals} offset={1500} color="#86A397"/>
         </div>
@@ -78,8 +78,8 @@ export default class IntuitPage extends Component {
     )
 
     const items = [
-      languageModelSection,
-      vuiSection
+      languageModelSection
+      // vuiSection
     ]
 
     return <ScrollingPage items={items} />
