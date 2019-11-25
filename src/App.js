@@ -5,6 +5,8 @@ import LandingPage from './components/Pages/LandingPage'
 import ThanxPage from './components/Pages/ThanxPage'
 import IntuitPage from './components/Pages/IntuitPage'
 import AboutMePage from './components/Pages/AboutMePage'
+import ProjectsPage from './components/Pages/ProjectsPage'
+import WritingPage from './components/Pages/WritingPage'
 
 class App extends Component {
   constructor(props) {
@@ -18,22 +20,6 @@ class App extends Component {
     this.setState({currentPage: newPage})
   }
 
-  navigateToAboutMe = () => {
-    this.setState({currentPage: "me"})
-  }
-
-  navigateToThanx = () => {
-    this.setState({currentPage: "thanx"})
-  }
-
-  navigateToStillThere = () => {
-    this.setState({currentPage: "still there"})
-  }
-
-  navigateToIntuit = () => {
-    this.setState({currentPage: "intuit"})
-  }
-
   renderPage = () => {
     switch(this.state.currentPage) {
       case "home":
@@ -41,7 +27,7 @@ class App extends Component {
       case "thanx":
       return (
         <div className="full-screen-page">
-          <ThanxPage onClick={this.navigateToIntuit} />
+          <ThanxPage />
         </div>
       )
       case "intuit":
@@ -52,6 +38,10 @@ class App extends Component {
       )
       case "me":
         return <AboutMePage onClick={this.updateCurrentPage} />
+      case "projects":
+        return <ProjectsPage />
+      case "writing":
+        return <WritingPage />
       default:
         return <div className="full-screen-page">Page: {this.state.currentPage}</div>
     }

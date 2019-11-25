@@ -32,8 +32,8 @@ export default class Menu extends Component {
             <MenuItem onClick={this.onMenuItemClick} label="thanx" />/
             <MenuItem onClick={this.onMenuItemClick} label="intuit" />/
             <MenuItem onClick={this.onMenuItemClick} label="projects" />/
-            <MenuItem onClick={this.onMenuItemClick} label="art" />/
-            <MenuItem onClick={this.onMenuItemClick} label="contact" />
+            <MenuItem onClick={this.onMenuItemClick} label="writing" />/
+            <a href="mailto:manav.s.kohli@gmail.com"> contact</a>
           </span>
         )
       }<span onClick={this.updateShowMenu}>

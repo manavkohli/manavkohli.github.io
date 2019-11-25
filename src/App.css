@@ -204,6 +204,14 @@
   color: #E1B07E;
 }
 
+a {
+  color: white;
+  text-decoration: none
+}
+
+a:hover {
+  color: #E1B07E;
+}
 @media only screen and (min-width: 750px) {
   .horizontal-card {
     flex-wrap: nowrap;

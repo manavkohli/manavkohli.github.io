@@ -17,9 +17,8 @@ const LandingPage = (props) => (
             {'label': 'me', 'year': 'Nov 1993-now'},
             {'label': 'thanx', 'year': 'Dec 2018-now'},
             {'label': 'intuit', 'year': 'Sep 2016-Dec 2018'},
-            {'label': 'writing', 'year': 'Jan 2019-now'},
             {'label': 'projects', 'year': '~'},
-            {'label': 'art', 'year': '~'},
+            {'label': 'writing', 'year': 'Jan 2019-now'},
           ]
         }
       />
