@@ -182,7 +182,7 @@
 
 .big-text {
   font-size: calc(10px + 6vmin);
-  max-width: 100%;
+  width: 60vw;
   padding-left: 20%;
   padding-right: 20%;
 }

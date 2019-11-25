@@ -6,10 +6,32 @@ import ChangingTextField from '../ChangingTextField/ChangingTextField'
 export default class IntuitPage extends Component {
   render() {
     const languageModelContent = (
-      <h1> Language Modelling </h1>
+      <div>
+        <h1> Language Modelling </h1>
+        <p>
+          I designed and built a language model for generating sentences with a
+          particular sentiment. The model was trained on transcripts from care
+          conversations between Intuit's agents and QuickBooks customers after
+          being stripped of PII. Because language around business profits (or
+          losses) can be difficult, the goal of the model was to generate more
+          positive or neutral responses that our agents could use while speaking
+          with customers about sensitive topics.
+        </p>
+      </div>
     )
     const gmailContent = (
-      <h1> Gmail Invoicing Add-On </h1>
+      <div>
+        <h1> Gmail Invoicing <br/> Add-On </h1>
+        <p>
+          I worked with a small team within Intuit to build a new invoicing
+          product that integrated with Gmail. We partnered with Google for the
+          launch of their Add-On product and helped the team iterate on early
+          feature development. Our team completed alpha and beta testing of
+          the integration and saw the product adoption grow to over 20,000
+          users.
+        </p>
+      </div>
+
     )
     const adjectives = [
       " sleeping ",
