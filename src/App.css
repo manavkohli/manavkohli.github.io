@@ -34,6 +34,7 @@
   background: #070302;
   font-size: calc(10px + 5vmin);
   text-align: left;
+  padding-top: 5vh;
 }
 
 .flex-two-thirds-column {
@@ -41,6 +42,7 @@
   justify-content: flex-start;
   padding-left: 5vw;
   padding-right: 5vw;
+  color: #C8BFC7;
 }
 
 .flex-one-third-column {
@@ -48,6 +50,7 @@
   justify-content: flex-start;
   padding-left: 5vw;
   padding-right: 5vw;
+  color: #C8BFC7;
 }
 
 .left-aligned-text {
@@ -96,6 +99,7 @@
   width: 90vw;
   display: flex;
   padding: 3vh;
+  flex-wrap: wrap;
 }
 
 .navigation-gif {
@@ -153,11 +157,12 @@
   background: #070302;
   padding-left: 7vw;
   padding-top: 3vh;
+  color: #C8BFC7;
 }
 
 .large-list-item {
-  min-height: 15vh;
-  font-size: calc(10px + 10vmin);
+  min-height: 10vh;
+  font-size: calc(7px + 10vmin);
   border-bottom: 3px solid #C8BFC7;
   min-width: 80vw;
   display: flex;
@@ -180,4 +185,38 @@
   max-width: 100%;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+.intro-content {
+  font-size: calc(7px + 1.5vmin);
+}
+
+.border-left {
+  border-left: white solid .2vw;
+}
+
+.about-me-link {
+  cursor: pointer;
+  color: #E1B07E;
+}
+
+@media only screen and (min-width: 800px) {
+  .horizontal-card {
+    flex-wrap: nowrap;
+  }
+
+  .intro-content {
+    font-size: calc(10px + 1.5vmin);
+  }
+
+  .large-list-item {
+    min-height: 15vh;
+    font-size: calc(10px + 10vmin);
+    border-bottom: 3px solid #C8BFC7;
+    min-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 }

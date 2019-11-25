@@ -6,7 +6,7 @@ const HorizontalCard = props => (
         <div className="flex-one-third-column">
           <img alt="" src={props.image} className="horizontal-card-image"/>
         </div>
-        <div className="flex-two-thirds-column left-aligned-text">
+        <div className="flex-two-thirds-column left-aligned-text border-left">
           {props.text}
         </div>
       </div>

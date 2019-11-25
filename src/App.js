@@ -5,7 +5,6 @@ import LandingPage from './components/Pages/LandingPage'
 import ThanxPage from './components/Pages/ThanxPage'
 import IntuitPage from './components/Pages/IntuitPage'
 import AboutMePage from './components/Pages/AboutMePage'
-import StillTherePage from './components/Pages/StillTherePage'
 
 class App extends Component {
   constructor(props) {
@@ -39,8 +38,6 @@ class App extends Component {
     switch(this.state.currentPage) {
       case "home":
         return <LandingPage onClick={this.updateCurrentPage} />
-      case "still there":
-        return <StillTherePage onClick={this.navigateToThanx} />
       case "thanx":
       return (
         <div className="full-screen-page">
@@ -54,7 +51,7 @@ class App extends Component {
         </div>
       )
       case "me":
-        return <AboutMePage onClick={this.navigateToStillThere} />
+        return <AboutMePage onClick={this.updateCurrentPage} />
       default:
         return <div className="full-screen-page">Page: {this.state.currentPage}</div>
     }
