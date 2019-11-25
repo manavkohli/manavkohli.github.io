@@ -35,21 +35,23 @@
   font-size: calc(10px + 5vmin);
   text-align: left;
   padding-top: 5vh;
+  padding-left: 10vh;
 }
 
 .flex-two-thirds-column {
-  width: 63%;
+  min-width: 66%;
   justify-content: flex-start;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  /* margin-left: 20px; */
+  /* padding-right: 5vw; */
+  /* border-left: white solid .2vw; */
   color: #C8BFC7;
 }
 
 .flex-one-third-column {
-  width: 33%;
-  justify-content: flex-start;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  min-width: 103%;
+  justify-content: center;
+  /* padding-left: 5vw; */
+  margin-right: 5vw;
   color: #C8BFC7;
 }
 
@@ -123,7 +125,7 @@
 }
 
 .left-aligned {
-  padding-right: 10vw;
+  /* padding-right: 10vw; */
 }
 
 .animated-horizontal-card {
@@ -188,11 +190,13 @@
 }
 
 .intro-content {
-  font-size: calc(7px + 1.5vmin);
+  font-size: calc(8px + 1.5vmin);
+  max-width: 90%;
+  justify-content: center;
 }
 
 .border-left {
-  border-left: white solid .2vw;
+  /* border-top: white solid .2vw; */
 }
 
 .about-me-link {
@@ -207,7 +211,7 @@
   }
 
   .intro-content {
-    font-size: calc(8px + 1.5vmin);
+    font-size: calc(6px + 2vmin);
   }
 
   .large-list-item {
@@ -219,5 +223,9 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+  }
+  .flex-one-third-column {
+    min-width: 33%;
+    justify-content: flex-start;
   }
 }
