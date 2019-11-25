@@ -7,7 +7,7 @@ export default class IntuitPage extends Component {
   render() {
     const languageModelContent = (
       <div>
-        <h1> Language Modelling </h1>
+        <h1> Language Modeling </h1>
         <p>
           I designed and built a language model for generating sentences with a
           particular sentiment. The model was trained on transcripts from care

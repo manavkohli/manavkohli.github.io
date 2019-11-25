@@ -41,9 +41,6 @@
 .flex-two-thirds-column {
   min-width: 66%;
   justify-content: flex-start;
-  /* margin-left: 20px; */
-  /* padding-right: 5vw; */
-  /* border-left: white solid .2vw; */
   color: #C8BFC7;
 }
 
@@ -195,9 +192,6 @@
   justify-content: center;
 }
 
-.border-left {
-  /* border-top: white solid .2vw; */
-}
 
 .about-me-link {
   cursor: pointer;

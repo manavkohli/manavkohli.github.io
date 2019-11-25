@@ -6,14 +6,14 @@ const HorizontalCard = props => (
         <div className="flex-one-third-column">
           <img alt="" src={props.image} className="horizontal-card-image"/>
         </div>
-        <div className="flex-two-thirds-column left-aligned-text border-left">
+        <div className="flex-two-thirds-column left-aligned-text">
           {props.text}
         </div>
       </div>
     }
     {
       props.imageAlignment === "right" && <div className="horizontal-card">
-        <div className="flex-two-thirds-column left-aligned-text border-left">
+        <div className="flex-two-thirds-column left-aligned-text">
           {props.text}
         </div>
         <div className="flex-one-third-column left-aligned">
