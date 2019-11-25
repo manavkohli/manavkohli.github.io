@@ -200,13 +200,14 @@
   color: #E1B07E;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .horizontal-card {
     flex-wrap: nowrap;
+    font-size: calc(6px + 2vmin);
   }
 
   .intro-content {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(8px + 1.5vmin);
   }
 
   .large-list-item {

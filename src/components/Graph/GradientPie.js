@@ -39,11 +39,11 @@ export default class GradientPie extends Component {
         radius={radius}
         getAngle={d => d.theta}
         data={[
-          {theta: 2, name: "AWS Maintenance", className: 'custom-class'},
-          {theta: 6, name: "Airflow Monitoring", className: 'custom-class'},
+          {theta: 3, name: "AWS Maintenance", className: 'custom-class'},
+          {theta: 5, name: "ETL Monitoring", className: 'custom-class'},
           {theta: 2, name: "Testing", className: 'custom-class'},
-          {theta: 3, name: "foo", className: 'custom-class'},
-          {theta: 1, name: "foo", className: 'custom-class'}
+          {theta: 1, name: "Airflow Optimization", className: 'custom-class'},
+          {theta: 3, name: "Feature Engineering", className: 'custom-class'}
         ]}
         onValueMouseOver={v => this.setState({value: v})}
         onSeriesMouseOut={v => this.setState({value: {"name": ""}})}

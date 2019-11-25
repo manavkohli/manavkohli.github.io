@@ -48,13 +48,43 @@ export default class ThanxPage extends Component {
     ]
 
     const architectureContent = (
-      <h1>Architecture</h1>
+      <div>
+        <h1>Architecture</h1>
+        <p>
+          I architected and implemented Thanx's machine learning platform using
+          Airflow. I created online/offline feature engineering pipelines, built
+          out and maintain all the infrastructure to support our models, and
+          actively develop on it. I also integrated the pipelines with our
+          production data lake to integrate predictions into product features.
+        </p>
+      </div>
     )
     const churnContent = (
-      <h1>Churn Prediction</h1>
+      <div>
+          <h1>Churn Prediction</h1>
+            <p>
+              When customers visit Thanx merchants they earn rewards.
+              Unfortunately, sometimes those customers either decide to take
+              their business elsewhere or move. I built a model that detects
+              when high-value customers churn and identifies those at risk in
+              order to enable the merchant to automagically win back those
+              errant individuals. The models retrain and evaluate themselves on
+              a monthly basis to guarantee that they continue to capture
+              current purchase habits.
+            </p>
+      </div>
     )
     const anomalyDetectionContent = (
-      <h1>Anomaly Detection</h1>
+      <div>
+          <h1>Anomaly Detection</h1>
+            <p>
+              Thanx delivers rewards to customers based on their spending at
+              merchants whose loyalty programs they are a part of. However,
+              sometimes we don't see enough transactions enter our system, too
+              many, or simply the wrong ones. I designed, trained, and deployed
+              an ML based anomaly detection system for flagging these events.
+            </p>
+      </div>
     )
     const anomalyDetectionSection = (
       <div>

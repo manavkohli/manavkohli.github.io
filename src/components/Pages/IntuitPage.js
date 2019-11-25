@@ -16,7 +16,8 @@ export default class IntuitPage extends Component {
       " hungry ",
       " quiet ",
       " ecstatic ",
-      " frank "
+      " frank ",
+      " lazy "
     ]
     const animals = [
       " bear ",
