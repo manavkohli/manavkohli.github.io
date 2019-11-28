@@ -66,11 +66,11 @@ export default class ThanxPage extends Component {
               When customers visit Thanx merchants they earn rewards.
               Unfortunately, sometimes those customers either decide to take
               their business elsewhere or move. I built a model that detects
-              when high-value customers churn and identifies those at risk in
+              when high-value customers churn or are at risk in
               order to enable the merchant to automagically win back those
               errant individuals. The models retrain and evaluate themselves on
               a monthly basis to guarantee that they continue to capture
-              current purchase habits.
+              relevant purchase habits.
             </p>
       </div>
     )
@@ -78,11 +78,11 @@ export default class ThanxPage extends Component {
       <div>
           <h1>Anomaly Detection</h1>
             <p>
-              Thanx delivers rewards to customers based on their spending at
-              merchants whose loyalty programs they are a part of. However,
+              Thanx delivers rewards to customers when they make purchases
+              at merchants they are loyalty members of. However,
               sometimes we don't see enough transactions enter our system, too
               many, or simply the wrong ones. I designed, trained, and deployed
-              an ML based anomaly detection system for flagging these events.
+              an ML-based anomaly detection system for flagging these events.
             </p>
       </div>
     )
@@ -115,8 +115,8 @@ export default class ThanxPage extends Component {
     )
 
     const items = [
-      anomalyDetectionSection,
       churnSection,
+      anomalyDetectionSection,
       architectureSection
     ]
 

@@ -32,9 +32,8 @@ export default class AboutMePage extends Component {
           snowboarding  <Emoji symbol={"🏂"} />, biking <Emoji symbol={"🚴🏽‍♂️"} />,
           cooking  <Emoji symbol={"🍳"} />, and reading <Emoji symbol={"📚"} />.
           Some of my recent favorite reads include Cherry, by Nico Walker and
-          2018 Best American Short Stories, curated by Roxanne Gay. My aesthetic
-          is inspired by Wes Anderson movies, and my favorite movie is the
-          Royal Tenenbaums.
+          2018 Best American Short Stories, curated by Roxanne Gay. My favorite
+          movie is the Royal Tenenbaums.
         </p>
         <p>
           I currently build machine learning solutions for
