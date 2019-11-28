@@ -38,11 +38,11 @@ export default class Menu extends Component {
         )
       }<span onClick={this.updateShowMenu}>
         <img
+          className="close-icon"
           src={CloseIcon}
           alt=""
-          style={{cursor: "pointer", transform: `rotate(${rotation}deg)`}}
-          height="42"
-          width="42"
+          style={{transform: `rotate(${rotation}deg)`}}
+
         />
       </span>
       </div>

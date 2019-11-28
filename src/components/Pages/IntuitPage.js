@@ -28,7 +28,7 @@ export default class IntuitPage extends Component {
           launch of their Add-On product and helped the team iterate on early
           feature development. Our team completed alpha and beta testing of
           the integration and saw the product adoption grow to over 20,000
-          users.
+          installs.
         </p>
       </div>
 

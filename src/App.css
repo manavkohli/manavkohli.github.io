@@ -20,10 +20,6 @@
   color: #EEEEEE;
 }
 
-.App-link {
-  color: #09d3ac;
-}
-
 .landing-screen {
   min-height: 30vh;
   display: flex;
@@ -35,7 +31,6 @@
   font-size: calc(10px + 5vmin);
   text-align: left;
   padding-top: 5vh;
-  /* padding-left: 10vh; */
 }
 
 .flex-two-thirds-column {
@@ -47,7 +42,6 @@
 .flex-one-third-column {
   min-width: 103%;
   justify-content: center;
-  /* padding-left: 5vw; */
   margin-right: 5vw;
   color: #C8BFC7;
 }
@@ -73,6 +67,7 @@
   font-size: calc(12px + 1vmin);
   cursor: pointer;
   color: #E1B07E;
+  font-size: calc(4px + 2vmin);
 }
 
 .full-screen-page {
@@ -100,6 +95,8 @@
   display: flex;
   padding: 3vh;
   flex-wrap: wrap;
+  font-size: calc(4px + 2vmin);
+  padding-left: 7vw;
 }
 
 .navigation-gif {
@@ -123,7 +120,8 @@
 }
 
 .left-aligned {
-  /* padding-right: 10vw; */
+  padding-right: 10vw;
+  text-align: left;
 }
 
 .animated-horizontal-card {
@@ -191,6 +189,7 @@
   font-size: calc(8px + 1.5vmin);
   max-width: 90%;
   justify-content: center;
+  margin: auto;
 }
 
 
@@ -207,6 +206,19 @@ a {
 a:hover {
   color: #E1B07E;
 }
+
+.pie-text {
+  margin: 10px;
+  font-size: calc(6px + 2vmin);
+  color: black;
+}
+
+.close-icon {
+  cursor: pointer;
+  height: 31.5px;
+  width: 31.5px;
+}
+
 @media only screen and (min-width: 750px) {
   .horizontal-card {
     flex-wrap: nowrap;
@@ -227,8 +239,26 @@ a:hover {
     justify-content: space-between;
     text-align: left;
   }
+
   .flex-one-third-column {
     min-width: 33%;
     justify-content: flex-start;
+  }
+
+  .pie-text {
+    font-size: calc(10px + 2vmin);
+  }
+
+  .menu-items {
+    font-size: calc(6px + 2vmin);
+  }
+
+  .close-icon {
+    height: 42px;
+    width: 42px;
+  }
+
+  .flex-two-thirds-column {
+    justify-content: center;
   }
 }

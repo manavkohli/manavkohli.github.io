@@ -53,7 +53,7 @@ export default class GradientPie extends Component {
       >
     {value.name !== "" &&
       <Hint value={value} align={{horizontal: Hint.ALIGN.RIGHT_EDGE, vertical: Hint.ALIGN.BOTTOM_EDGE}}>
-        <div style={{'margin': '10px', 'fontSize': 'calc(10px + 2vmin)', color: 'black'}}> {value.name} </div>
+        <div className="pie-text" > {value.name} </div>
       </Hint>
 
     }
