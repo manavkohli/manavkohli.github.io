@@ -2,7 +2,7 @@
   text-align: center;
   background-color: #070302;
   min-height: 100vh;
-  color: #C8BFC7;
+  color: white;
 }
 
 .App-logo {
@@ -36,7 +36,7 @@
 .flex-two-thirds-column {
   min-width: 66%;
   justify-content: flex-start;
-  color: #C8BFC7;
+  color: white;
   text-align: left;
 }
 
@@ -54,7 +54,7 @@
   justify-content: flex-end;
   padding-right: 5vw;
   padding-top: 2vw;
-  color: #EEEEEE;
+  color: white;
   font-size: calc(12px + 3vmin);
 }
 
